@@ -1,0 +1,109 @@
+/* ฟ้อนต์ Poppins ดูทันสมัย หรูหรา */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px 40px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a237e;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #3f51b5;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.server {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.server:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.15);
+}
+
+.server h2 {
+    color: #283593;
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+}
+
+.content {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content img {
+    border-radius: 16px;
+    width: 260px;
+    height: auto;
+    box-shadow: 0 6px 18px rgba(40, 53, 147, 0.15);
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text p {
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+.text ul {
+    margin-top: 8px;
+    padding-left: 20px;
+    list-style-type: square;
+    color: #3949ab;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Responsive: ปรับเลย์เอาต์ในมือถือ */
+@media (max-width: 720px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content img {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    .text {
+        min-width: auto;
+    }
+}
